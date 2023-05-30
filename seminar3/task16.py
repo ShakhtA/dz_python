@@ -9,7 +9,6 @@
 3
 -> 1
 '''
-import random
 
 number = (int(input("Введите количество элементов в массиве - ")))
 massiv = []
