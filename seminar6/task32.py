@@ -4,18 +4,15 @@
 значения которых принадлежат заданному диапазону
 (т.е. не меньше заданного минимума и не больше заданного максимума)
 '''
-import random
-size = int(input("Ведите размер массива - "))
-array = []
-for i in range(size):
-    array.append(random.randint(-100, 100))
+array = [-5, 9, 0, 3, -1, -2, 1, 4, -2, 10, 2, 0, -9, 8, 10, -9, 0, -5, -5, 7]
+
 print(array)
 
-intMax = int(input("Введите максимальное число - "))
-intMin = int(input("Введите минимальное число - "))
+max_arr = int(input("Введите максимальное число - "))
+min_arr = int(input("Введите минимальное число - "))
 
 indexArray = []
-for i in range(size):
-    if intMin < array[i] < intMax: indexArray.append(i)
+for i in range(len(array)):
+    if min_arr <= array[i] <= max_arr: indexArray.append(i)
 
 print(indexArray)
