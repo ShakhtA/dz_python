@@ -22,12 +22,10 @@ def count_letters(text, letters_set):
     
 text = input("Введите фразу: ")
 text_list = text.split(' ')
-#print(text_list)
 letters_set = {'а', 'е', 'и', 'о', 'у', 'э', 'ю', 'я'}
 count_list = []
 for el in text_list:
     count_list.append(count_letters(el, letters_set))
-#print(count_list)
 
 rythm = True
 for el in count_list[1:]:
